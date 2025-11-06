@@ -8,15 +8,11 @@ class Singleton
 public:
     static T& getInstance()
     {
-        static T& getInstance(){
-        static T instance;
-        return instance; // IMPLEMENT
-        }
+        static T instance; 
+        return instance;
     }
 
-    Singleton(const Singleton&) = delete;
-    Singleton& operator=(const Singleton&) = delete;
-
+    // IMPLEMENT: Mention required constructors
 private:
     Singleton() = default;
     ~Singleton() = default;
